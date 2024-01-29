@@ -3,7 +3,7 @@
 Simple pagination and hypermedia pagination
     Use the CSV file at the top of the project)
     Use assert to verify that both arguments are integers greater than 0
-    Use index_range to find the correct indexes to paginate the dataset correctly
+    Use index_range to find the correct indexes to paginate the dataset
     If the input arguments are out of range for the dataset, return empty list
 return the appropriate page of the dataset (i.e. the correct list of rows)
 return dictionary containig key-value pair
@@ -53,7 +53,7 @@ class Server:
             return []
         return data[start_index: end_index]
 
-    def get_hyper(self, page: int=1, page_size: int = 10) -> List[List]:
+    def get_hyper(self, page: int = 1, page_size: int = 10) -> List[List]:
         """
         return dictionary containing key-value pairs
         """
