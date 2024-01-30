@@ -41,18 +41,17 @@ class Server:
 
     def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict:
         """
-
+        hypermedia index pagination
         """
         dict = {}
-        
         if index is None:
             index = 0
 
         assert 0 <= index < len(self.indexed_dataset())
         indexed_dataset = self.indexed_dataset()
         next_index = (index * page_size) + 1
-        data = [indexed_dataset[i] for i in range (index, next_index)]
-        
+        data = [indexed_dataset[i] for i in range(index, next_index)]
+
         dict['index'] = index
         dict['next_index'] = next_index
         dict['page_size'] = page_size
