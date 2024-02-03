@@ -26,7 +26,6 @@ class BasicCache(BaseCaching):
         """
         Gets an item by the key
         """
-        if key:
-            if self.cache_data.get(key):
-                return (self.cache_data.get(key))
+        if key and key in self.cache_data:
+            return (self.cache_data.get(key))
         return None
