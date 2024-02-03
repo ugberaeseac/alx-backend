@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """
-
+class BasicCache that inherits from BaseCaching and is a caching system
+You must use self.cache_data - dictionary from the parent class BaseCaching
+This caching system doesn’t have limit
 """
 
 
