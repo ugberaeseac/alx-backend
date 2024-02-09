@@ -33,13 +33,13 @@ def get_locale():
     """
     return request.accept_languages.best_match(app.config['LANGUAGES'])
 
+
 @app.route('/')
 def home():
     """
     return 1-index.html
     """
     return render_template('1-index.html')
-
 
 
 if __name__ == '__main__':
