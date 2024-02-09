@@ -3,7 +3,7 @@
 Basic Flask app
 create a single / route and an index.html template
 that simply outputs “Welcome to Holberton” as page title
-and "Hello World" as header 
+and "Hello World" as header
 """
 
 
@@ -24,4 +24,3 @@ def index():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port='5000', debug=True)
-
