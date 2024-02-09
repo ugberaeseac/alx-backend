@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """
-
+Basic flask setup
+Instantiate Babel Object
+create config class for flask app
 """
 
 
@@ -14,7 +16,7 @@ babel = Babel(app)
 
 class Config():
     """
-
+    config class for flask app
     """
     LANGUAGES = ['en', 'fr']
     BABEL_DEFAULT_LOCALE = 'en'
@@ -27,7 +29,7 @@ app.config.from_object(Config)
 @app.route('/')
 def home():
     """
-
+    return 1-index.html
     """
     return render_template('1-index.html')
 
