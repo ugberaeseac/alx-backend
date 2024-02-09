@@ -14,12 +14,11 @@ app = Flask(__name__)
 
 
 @app.route('/', strict_slashes=False)
-def index():
+def home():
     """
     return 0-index.html
     """
-    title = "Welcome to Holberton"
-    return render_template('0-index.html', title=title)
+    return render_template('0-index.html')
 
 
 if __name__ == '__main__':
