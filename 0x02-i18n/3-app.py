@@ -7,7 +7,7 @@ create config class for flask app
 
 
 from flask import Flask, render_template, request
-from flask_babel import Babel
+from flask_babel import Babel, gettext
 
 
 app = Flask(__name__)
@@ -39,6 +39,8 @@ def home():
     """
     return 2-index.html
     """
+    home_title = gettext('Welcome to Holberton')
+    home_header = gettext('Hello World')
     return render_template('2-index.html')
 
 
