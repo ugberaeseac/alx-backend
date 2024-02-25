@@ -37,11 +37,11 @@ def get_locale():
 @app.route('/')
 def home():
     """
-    return 2-index.html
+    return 3-index.html
     """
     home_title = gettext('Welcome to Holberton')
     home_header = gettext('Hello World')
-    return render_template('2-index.html')
+    return render_template('3-index.html', home_title=home_title, home_header=home_header)
 
 
 if __name__ == '__main__':
